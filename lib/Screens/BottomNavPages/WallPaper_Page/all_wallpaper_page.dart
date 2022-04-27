@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaper_app/Screens/BottomNavPages/WallPaper_Page/add_wallpaper_page.dart';
+import 'package:wallpaper_app/Utils/routers.dart';
 
 class WallPaperHomePage extends StatefulWidget {
   const WallPaperHomePage({Key? key}) : super(key: key);
@@ -13,7 +15,10 @@ class _WallPaperHomePageState extends State<WallPaperHomePage> {
     return Scaffold(
       body: const Center(child: Text("All Wallpaper")),
       floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {}, label: const Text('Upload')),
+          onPressed: () {
+            nextPage(context: context, page: const AddWallPaperPage());
+          },
+          label: const Text('Upload')),
     );
   }
 }

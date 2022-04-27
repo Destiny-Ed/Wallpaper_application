@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_app/Screens/BottomNavPages/all_wallpaper_page.dart';
+import 'package:wallpaper_app/Screens/BottomNavPages/WallPaper_Page/all_wallpaper_page.dart';
 import 'package:wallpaper_app/Screens/BottomNavPages/dowload_page.dart';
 
 class MainActivityPage extends StatefulWidget {
