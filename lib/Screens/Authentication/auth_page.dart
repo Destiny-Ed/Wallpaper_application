@@ -20,7 +20,8 @@ class _AuthPageState extends State<AuthPage> {
             child: customButtom(
                 text: 'Continue with google',
                 onTap: () {
-                  nextPage(page: const MainActivityPage(), context: context);
+                  nextPageOnly(
+                      page: const MainActivityPage(), context: context);
                 },
                 textColor: Colors.white,
                 bgColor: Colors.blue,
